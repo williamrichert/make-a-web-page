@@ -1,0 +1,93 @@
+ *{ -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+   }
+
+#Lesson1{
+
+}
+
+.TOC{
+  display: flex;
+}
+
+li{
+  width: 40%;
+  list-style-type: none;
+}
+
+ ul{
+    display: -webkit-flex; /* This line supports Safari-users */
+    display: flex;
+    text-align : center;
+    list-style-type : none;
+    margin : auto;
+
+   }
+    
+ h1 {
+      margin : auto;      
+      text-align : center;
+      color: #001214;
+      background-color: #b2b2b2;
+      border-radius: 30%;
+    }  
+
+  body {
+      
+      margin : auto;    
+      font-family : helvetica;
+      background-color: #d9d9d9;
+      max-width: 95%;
+      
+    }
+
+  .image_with_text{
+
+    display: flex;
+    display: -webkit-flex;
+    max-width: 60%;
+    
+  }
+   
+
+
+   img {
+       border: 4px solid #020014;
+       text-align: right;
+       width: auto;
+       height: auto;
+
+       
+   }
+
+  p{
+      margin : auto;
+      padding : 15px;
+      
+      color: #001214;
+    }
+    
+  b {  
+      margin : auto;
+      color : #228b3c;
+      padding-top: 10px;
+
+    }
+    
+ .lesson {
+   
+  border-radius: 20px;
+  color: #001214;
+  padding: 30px;
+ 
+  }
+
+.techniques{
+  font-weight: 500;
+  background-color: #cfcfcf;
+  border-radius: 30%;
+
+}

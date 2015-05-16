@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <Title>Notes on Web Basics</Title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!--Project O: Notes on HTML and the Web, as HTML
+Student Name: Will
+Location: Portland, OR
+For: Udacity
+-->
+  <div>
+    <h1>Go to contents</h1>
+      <ol class="TOC">
+        <li><a href="#Lesson1">Lesson 1: HTML and the Web</a></li>
+        <li><a href="#Lesson2">Lesson 2: The Structure of a Webpage</a></li>
+        <li><a href="#Lesson3">Lesson 3: Efficient Styling with CSS</a></li>
+      </ol>
+
+  </div>
+    <h1 id="Lesson1">HTML and the Web</h1>
+      <div class="Lesson">
+        <p>
+          <b>World Wide Web</b>
+        </p>
+        <p>
+          The Web is composed primarily of a collection of HTML documents
+          linked by hyperlinks. The web was invented in the early 1990's by
+          <em>Tim Berners-Lee</em> and others. The Web is composed of computers 
+          that are optimized for running continuously to host and serve-up 
+          webpages (HTML documents). Called <em>servers</em> these computers
+          receive requests sent to them by humans and their webbrowsers which
+          send requests in the form of the protocol of the web, <em>Hyper Text
+          Tranfer Protocol</em> or HTTP.
+        </p>
+        <p>
+          <b>Hyper Text Markup Language</b>
+        </p>
+        <p>
+           <em>Hyper Text Markup Language</em> (HTML) is the the main document
+           type of the Web although other types of files can also be found--and
+           linked to--files such as images, video, audio files, and document
+           files besides HTML (for example, pdf documents). HTML is made up of:
+           <br><br>1) the text content (what you see on the webpage through your
+           browser), and<br>2) mark-up code that tells your browser what the
+           text will look like or how it will be displayed.         
+        </p>
+        <p>
+          <b>HTTP Protocol</b>
+        </p>
+        <p>
+          The internet uses HTTP to communicate with you, your browser, and
+          servers. For example, when you enter the url of, say, Amazon.com
+          into your browser, your browser sends a request in HTTP to the 
+          server that hosts Amazon's website.
+        </p>
+        <p>
+          <b>Specifics of HTML</b>
+        </p>
+        <p>
+          HTML is composed of plain text characters and tags. Tags are a kind of
+          code that webbrowsers can understand and use to render or draw the
+          various elements of the webpate. In HTML, plain text is rendered as
+          plain text. HTML markup tags are enclosed in angled brackets like this:
+          <br><br>&lt;html-tag&gt;
+          <br><br>Some types of HTML tage require both an opening and a
+          closing tag. HTML tags that do not require a closing tag are called
+          <em>void tags</em>. The break tag &lt;br&gt; is an example of a void tag.
+          It's easy to forget to add the closing tag for non-void tags, but you
+          will often see the result of this error show up on the webpage, and a 
+          good text editor, such as scratchpad.io will automatically create the 
+          end tag as soon as you write the closing angled bracket on the opening 
+          tag.<br><br>For more background on HTML and the Web, go 
+          <a href="https://docs.webplatform.org/wiki/html">here</a>.
+        </p>
+        <p>
+          <b>A note on the tedious literalness of computers</b>
+        </p>
+        <div class="image_with_text">
+          <div>
+            <p>
+              Computers are unforegiving/literal/stupid. However,good <em>text
+              editor</em> can help us keep track of what we are telling the
+              computer bridging the gap between the human world of casual and
+              interpretive communication and the literal, linear world of the
+              computers. For a helpful, online and real-time text editor go
+              <a href="www.scratchpad.io">here</a>, or you could check <a href=
+              "www.codepen.io">this one</a> out. To download a more powerful text 
+              editor onto your own computer checkout
+              <a href="https://notepad-plus-plus.org/">Notepad++</a> or
+              <a href="http://www.sublimetext.com/">Sublime Text</a>.
+              </p>
+          </div>
+          <div class="image"><a href="http://imgur.com/YYHjVBC">
+            <img src="http://i.imgur.com/YYHjVBCm.jpg" title="source: imgur.com" 
+            alt="Image of a Primate" /></a>
+          </div>
+        </div>
+        <div class="techniques">
+        <h2>Key Techniques and Methods</h2>
+          <p>
+             <b>HTML Attributes - new concept</b>
+          </p>
+          <p>
+            <em>Tag attributes</em> are written in the opening tag(in the first
+            set of angled brackets) after the letter or letters specifying the 
+            type of tag. For example, an anchor tag that anchors a link has the 
+            opening tag thusly:<br>&lt;a tag-attribute-here="some url webaddress
+            here"&gt;. A tag attribute always equals some value, such as the url 
+            of a webpage or a link to an image. Examples would be:<br>
+            a href= www."udacity.com"
+            Surround that with angled brackets, follow it with some text content 
+            and then an end tag and you will have a link.
+            anchors are the a's inside of angled brackets: they are for making
+            links.
+            <br>The image or img tag is a void tag: img src="url" alt= "txt"
+            The alt= "some text here" gives the computers instructions on what
+            to display to the user if the picture at the link is unavailable.
+            <br>The letters src stand for <em>source</em>; an <em>image</em> or
+            img always has a <em>source</em> or src just like an <em>achor</em>
+            or a always has a <em>hypertext reference</em> or href.
+          </p>
+          <p>
+            <b>Special Reminder</b>
+          </p>
+          <p>
+             Do not forget to surround the url's of your attribute values with 
+             quotation marks.
+          </p>
+          <p>
+            <b>Advice</b>
+          </p>
+          <p>
+            Be advised: in coding, there are so many facts to remember that 
+            searching the web or consulting community forums is the norm. You 
+            cannot expect to master all of the facts and be able to code without
+            consulting other resources. You need to understand the key ideas and 
+            then know where to go when you need help with the details.
+          </p>
+          <p>
+             <b>Inline Elements vs. Block Elements</b>
+          </p>
+          <p>
+            Inline elements occupy the same line with text when you are writing 
+            your code or HTML code. An example is the &lt;em&gt; element used to 
+            italicize words within a larger body of text. In contrast, block
+            elements are written on their own lines within the code and serve to
+            set apart whatever they enclose.
+          </p>
+          <p>
+            <b>Container Elements</b>
+          </p>
+          <p>
+            Container elemenents contain stuff inside of them. Examples of
+            container elements are &lt;div&gt; and &lt;span&gt;. You can use &lt;div&gt;
+            tags to nest boxs of text inside of other boxes by nesting the
+            div tags. You can do the same with &lt;span&gt; tags.(span tags are
+            inline elements; they demarcate boxes on one line). You do not see
+            these boxes in the browser - they are invisible unless otherwise
+            styled into view - but their effect is visible in how other elements
+            on the webpage will appear to be demarcated and separated.
+          </p>
+          <p>
+            <b>White Space</b>
+          </p>
+          <p>
+            <em>White space</em> or empty space in the code gets ignored by the
+            browser when displaying or <em>rendering</em> the webpage. Text is
+            rendered continuously on one line unless you tell the computer
+            otherwise with appropriate tags.
+          </p>
+          <p>
+            <b>Notes on Headings and Format</b>
+          </p>
+          <p>
+            Documents will often start and end with a tag that declares that it is
+            an HTML document: &lt;html&gt;. The main body of a web page contents
+            (including all tags within the body of the webpage) will be nested
+            with a pair of tags &lt;body&gt; and its closing tag&lt;body&gt;. A 
+            section above the body is demarcated as the head with a pair of tags:
+            &lt;head&gt; and &lt;head&gt;. Within the head tags, the title tags and 
+            title of the webpage will be specified (which the browser will render
+            onto its tab associated with the webpage) as well as a link tag that
+            serves to link the html code with the associated style file.
+          </p>
+        </div>
+      </div>
+    <h1 id="Lesson2">The Structure of a Webpage</h1>
+      <div class="Lesson">
+        <p>
+          <b>HTML, CSS, and Javascript</b>
+        </p>
+        <p>
+          Where HTML is analogous to the floor plan of a house, the CSS file 
+          linked to the webpage if analougous to the stye plans and decoration
+          of a house, and javascript is analogous to the machines, appliances, 
+          and gadgets within the house.
+        </p>
+        <p>
+          <b>Document Object Model</b>
+        </p>
+        <p>
+          Webbrowsers use HTML tags to built a tree-like structure of the nested
+          hierarchies and sections that make up the webpage. This tree-like 
+          structure is known as the<em>Document Object Model</em> or DOM. When 
+          you use a browser to view the HTML code that is 'under the hood' of a 
+          webpage, the browser will tag the various separate HTML elements with
+          little triangles, which, when selected or clicked on, with expand to
+          show the element in further detail, sort of like dissecting the webpage.
+        </p>
+        <p>
+          <b>Boxes</b>
+        </p>
+        <p>
+          Stated most simply, HTML structures a webpage into a bunch of boxes, 
+          some of which are separate and some of which can contain...other boxes.
+          When you see shapes on a webpage that are not boxes(e.g. circles,
+          elipses, triangles) this has been accomplished by using the CSS file 
+          linked to the HTML document for the page.
+        </p>
+      </div>
+    <h1 id="Lesson3">Efficient Styling with CSS</h1>
+      <div class="Lesson">
+        <p>
+          <b>Cascading Style Sheets Prevent Repetition</b>
+        </p>
+        <p>
+          By using the code for <em>Cascading Style Sheets</em> (CSS) and
+          linking CSS files with their HTML documents, web developers accomplish
+          a number of efficiences for themselves, the internet, and the browser
+          that is is ultimately rendering the page for the viewer. CSS code
+          allows the developer to apply the same styling to multiple HTML
+          elements. For example, the developer could apply the same styling to
+          all &lt;h1&gt; tags or to all paragraphes or to all &lt;div&gt; items
+          that share the attribute/value combination class="Desciption" or some
+          other similar attribute. By avoiding repetition in coding for style, 
+          CSS helps to reduce the number of 'moving parts' in the code of a 
+          a webpage, the coder has less of a change to introduce errors
+          (because) they are not typing as much, they will detect errors sooner
+          (because a shorter body of code is more easy to read and review).
+        </p>
+        <p>
+          <b>Abstraction Ennacted</b>
+        </p>
+        <p>
+          The benefits of CSS illustrate the centrality of abstraction or
+          generalizability in computer science and programming. Coders, the code
+          they write, and the computers that run their code can all accomplish
+          more with less to the degree that like elements are grouped together
+          and ennacted upon in concert via abstraction. 
+        </P>
+        <p>
+        <div class="techniques">
+        <h2>Key Techniques and Methods</h2>
+          <p> 
+            <b>CSS Techniques</b>
+          </p>
+          <p>
+          The specific a given CSS selector is, the more it will override other
+          styles and selectors. For example, the CSS ID selector is very
+          specific: in HTML it will look like &lt;div id="some_value"&gt;, and 
+          the corresponding CSS selector would look like this: #some_value.
+          That is, a hash symbol followed by the value of the id attribute 
+          followed by the curly braces. The class selector is less specific,
+          but allows for a certain amount of specificity. In HTML the attribute
+          in the tag looks like this: class="some_value". The corresponding CSS
+          selector uses a kind of dot-notation and would look like this:
+          .some_value, followed by the opening curley brace.
+         </p>
+        </div>
+      </div>
+    <span>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+          
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+    </span>
+  </body>
+</html>
